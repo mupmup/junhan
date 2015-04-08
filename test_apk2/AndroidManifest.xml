@@ -26,6 +26,8 @@
         <activity android:name="com.example.test_apk2.badge_count.BadgeCountActivity"/>
         <activity android:name="com.example.test_apk2.use_ime_range.UseImeRangeActivity"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name="com.example.test_apk2.use_ime_range.UseImeRangeWithGridActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity android:name="com.example.test_apk2.check_ime_actived.CheckImeActivedActivity"
             android:configChanges="orientation|screenSize"
             android:windowSoftInputMode="adjustResize|stateHidden" />

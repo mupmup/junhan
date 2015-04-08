@@ -5,4 +5,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="ime_height">200dip</dimen>
+    
+    <dimen name="grid_item_size">60dip</dimen>
+    <dimen name="grid_imgae_size">72dip</dimen>
 </resources>
