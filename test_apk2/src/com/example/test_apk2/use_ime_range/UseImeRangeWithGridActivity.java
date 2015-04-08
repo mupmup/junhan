@@ -5,6 +5,7 @@ import java.util.List;
 import com.example.test_apk2.R;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -16,6 +17,7 @@ import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.view.ViewTreeObserver;
@@ -170,13 +172,20 @@ public class UseImeRangeWithGridActivity extends Activity {
 //		mPopupWindow = new PopupWindow(tv, LayoutParams.MATCH_PARENT, keyboardHeight, false);
 		
 		layoutGrid();
-		GridView gv = new GridView(this);
-		gv.setBackgroundColor(0x88BBBBFF);
-		gv.setColumnWidth(getResources().getDimensionPixelSize(R.dimen.grid_imgae_size));
-		gv.setNumColumns(GridView.AUTO_FIT);
-		gv.setStretchMode(GridView.STRETCH_COLUMN_WIDTH);
-		gv.setAdapter(new GridAdpter(this));
-		mPopupWindow = new PopupWindow(gv, LayoutParams.MATCH_PARENT, keyboardHeight, false);
+//		GridView gv = new GridView(this);
+//		gv.setBackgroundColor(0x88BBBBFF);
+//		gv.setColumnWidth(getResources().getDimensionPixelSize(R.dimen.grid_imgae_size));
+//		gv.setNumColumns(GridView.AUTO_FIT);
+//		gv.setStretchMode(GridView.STRETCH_COLUMN_WIDTH);
+//		gv.setAdapter(new GridAdpter(this));
+		
+		LayoutInflater inflater = getLayoutInflater();
+//		LayoutInflater inflater = LayoutInflater.from(this);
+//		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		LinearLayout layout = (LinearLayout)inflater.inflate(R.layout.ime_with_grid_layout, null);
+		GridView gridView = (GridView)layout.findViewById(R.id.grid_view);
+		gridView.setAdapter(new GridAdpter(this));
+		mPopupWindow = new PopupWindow(layout, LayoutParams.MATCH_PARENT, keyboardHeight, false);
 		
 		mPopupWindow.setOnDismissListener(new OnDismissListener() {
 			@Override
@@ -253,6 +262,14 @@ public class UseImeRangeWithGridActivity extends Activity {
 			image.setImageDrawable(info.activityInfo.loadIcon(mPackageManager));
 			text.setText(info.activityInfo.loadLabel(mPackageManager).toString());
 			
+			image.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					Intent intent = new Intent(Intent.ACTION_RUN);
+					intent.setComponent(new ComponentName(info.activityInfo.packageName, info.activityInfo.name));
+					mActivity.startActivity(intent);
+				}
+			});
 			
 			return convertView;
 		}
