@@ -37,6 +37,8 @@
         <activity android:name="com.example.test_apk2.floating_action_button.FloatActionButtonActivity3"/>
         <activity android:name="com.example.test_apk2.list_animation.ListAnimationActivity"
             android:theme="@style/CustomActionBarTheme" />
+        <activity android:name="com.example.test_apk2.view_pager.ViewPagerActivity"/>
+        
     </application>
 
 </manifest>

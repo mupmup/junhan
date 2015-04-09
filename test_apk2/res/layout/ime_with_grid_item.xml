@@ -2,13 +2,13 @@
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
+	android:layout_height="@dimen/grid_item_height"
 	android:orientation="vertical"
 	android:padding="5dip" >
 	
     <ImageView 
-		android:layout_width="@dimen/grid_item_size"
-		android:layout_height="@dimen/grid_item_size"
+		android:layout_width="@dimen/grid_image_size"
+		android:layout_height="@dimen/grid_image_size"
 		android:layout_gravity="center"
 		android:src="@drawable/ic_launcher"
 		android:id="@+id/image_view" />
@@ -16,7 +16,7 @@
 	<TextView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_gravity="center"
+		android:gravity="center"
 		android:ellipsize="end"
 		android:lines="1"
 		android:id="@+id/text_view" />

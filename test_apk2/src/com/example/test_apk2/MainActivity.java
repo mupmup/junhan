@@ -8,6 +8,7 @@ import com.example.test_apk2.floating_action_button.FloatActionButtonActivity3;
 import com.example.test_apk2.list_animation.ListAnimationActivity;
 import com.example.test_apk2.use_ime_range.UseImeRangeActivity;
 import com.example.test_apk2.use_ime_range.UseImeRangeWithGridActivity;
+import com.example.test_apk2.view_pager.ViewPagerActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -36,6 +37,7 @@ public class MainActivity extends Activity {
 		addItem(FloatActionButtonActivity2.class, "floating 버튼 테스트 2");
 		addItem(FloatActionButtonActivity3.class, "floating 버튼 테스트3");
 		addItem(ListAnimationActivity.class, "list에서 애니메이션 처리 연습");
+		addItem(ViewPagerActivity.class, "ViewPager 연습");
 	}
 	
 	private void addItem(Class<?> cls, String description) {

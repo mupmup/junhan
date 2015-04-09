@@ -9,7 +9,7 @@
 	<GridView 
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:columnWidth="@dimen/grid_imgae_size"
+		android:columnWidth="@dimen/grid_item_height"
 		android:gravity="center"
 		android:numColumns="auto_fit"
 		android:stretchMode="columnWidth"

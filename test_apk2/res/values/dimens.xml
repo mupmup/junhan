@@ -6,6 +6,7 @@
 
     <dimen name="ime_height">200dip</dimen>
     
-    <dimen name="grid_item_size">60dip</dimen>
-    <dimen name="grid_imgae_size">72dip</dimen>
+    <dimen name="grid_item_width">72dip</dimen>
+    <dimen name="grid_item_height">90dip</dimen>
+    <dimen name="grid_image_size">60dip</dimen>
 </resources>

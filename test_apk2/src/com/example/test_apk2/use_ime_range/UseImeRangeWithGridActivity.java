@@ -130,8 +130,8 @@ public class UseImeRangeWithGridActivity extends Activity {
 						int heightDifference = screenHeight - (r.bottom);
 //						Log.d("mup","onGlobalLayout()::" + heightDifference);
 						
-						if (previousHeightDiffrence - heightDifference > 50) {
-//						if (previousHeightDiffrence > heightDifference) {
+//						if (previousHeightDiffrence - heightDifference > 50) {
+						if (previousHeightDiffrence > heightDifference) {
 							mPopupWindow.dismiss();
 						}
 						previousHeightDiffrence = heightDifference;
@@ -182,7 +182,8 @@ public class UseImeRangeWithGridActivity extends Activity {
 		LayoutInflater inflater = getLayoutInflater();
 //		LayoutInflater inflater = LayoutInflater.from(this);
 //		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		LinearLayout layout = (LinearLayout)inflater.inflate(R.layout.ime_with_grid_layout, null);
+//		LinearLayout layout = (LinearLayout)inflater.inflate(R.layout.ime_with_grid_layout, null);
+		ViewGroup layout = (ViewGroup)inflater.inflate(R.layout.ime_with_grid_layout, null);
 		GridView gridView = (GridView)layout.findViewById(R.id.grid_view);
 		gridView.setAdapter(new GridAdpter(this));
 		mPopupWindow = new PopupWindow(layout, LayoutParams.MATCH_PARENT, keyboardHeight, false);
