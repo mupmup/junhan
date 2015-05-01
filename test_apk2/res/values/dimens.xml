@@ -4,7 +4,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="ime_height">200dip</dimen>
+    <dimen name="ime_height">230dip</dimen>
     
     <dimen name="grid_item_width">72dip</dimen>
     <dimen name="grid_item_height">90dip</dimen>

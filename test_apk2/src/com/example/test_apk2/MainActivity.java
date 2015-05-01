@@ -6,6 +6,7 @@ import com.example.test_apk2.floating_action_button.FloatActionButtonActivity;
 import com.example.test_apk2.floating_action_button.FloatActionButtonActivity2;
 import com.example.test_apk2.floating_action_button.FloatActionButtonActivity3;
 import com.example.test_apk2.list_animation.ListAnimationActivity;
+import com.example.test_apk2.use_ime_range.ImeWithViewPagerActivity;
 import com.example.test_apk2.use_ime_range.UseImeRangeActivity;
 import com.example.test_apk2.use_ime_range.UseImeRangeWithGridActivity;
 import com.example.test_apk2.view_pager.ViewPagerActivity;
@@ -32,6 +33,7 @@ public class MainActivity extends Activity {
 		addItem(BadgeCountActivity.class, "아이콘에 count 개수 표시");
 		addItem(UseImeRangeActivity.class, "IME 영역 부분을 Activity에서 사용");
 		addItem(UseImeRangeWithGridActivity.class, "IME 영역 부분을 Activity에서 사용, grid 적용");
+		addItem(ImeWithViewPagerActivity.class, "IME 영역 부분을 Activity에서 사용, ViewPager 적용");
 		addItem(CheckImeActivedActivity.class, "IME 활성화 여부 체크 테스트");
 		addItem(FloatActionButtonActivity.class, "floating 버튼 테스트");
 		addItem(FloatActionButtonActivity2.class, "floating 버튼 테스트 2");
