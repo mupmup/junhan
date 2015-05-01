@@ -40,6 +40,8 @@
         <activity android:name="com.example.test_apk2.list_animation.ListAnimationActivity"
             android:theme="@style/CustomActionBarTheme" />
         <activity android:name="com.example.test_apk2.view_pager.ViewPagerActivity"/>
+        <activity android:name="com.example.test_apk2.ramdom_number.RandomNumberActivity"/>
+        <activity android:name="com.example.test_apk2.ramdom_number.RandomNumberActivity2"/>
         
     </application>
 

@@ -6,6 +6,8 @@ import com.example.test_apk2.floating_action_button.FloatActionButtonActivity;
 import com.example.test_apk2.floating_action_button.FloatActionButtonActivity2;
 import com.example.test_apk2.floating_action_button.FloatActionButtonActivity3;
 import com.example.test_apk2.list_animation.ListAnimationActivity;
+import com.example.test_apk2.ramdom_number.RandomNumberActivity;
+import com.example.test_apk2.ramdom_number.RandomNumberActivity2;
 import com.example.test_apk2.use_ime_range.ImeWithViewPagerActivity;
 import com.example.test_apk2.use_ime_range.UseImeRangeActivity;
 import com.example.test_apk2.use_ime_range.UseImeRangeWithGridActivity;
@@ -40,6 +42,7 @@ public class MainActivity extends Activity {
 		addItem(FloatActionButtonActivity3.class, "floating 버튼 테스트3");
 		addItem(ListAnimationActivity.class, "list에서 애니메이션 처리 연습");
 		addItem(ViewPagerActivity.class, "ViewPager 연습");
+		addItem(RandomNumberActivity2.class, "random number 생성");
 	}
 	
 	private void addItem(Class<?> cls, String description) {

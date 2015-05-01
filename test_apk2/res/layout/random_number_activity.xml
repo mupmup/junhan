@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+	
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="select count : " />
+		<EditText 
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="6"
+			android:id="@+id/editor_count" />
+	</LinearLayout>
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="ramge end : " />
+		<EditText 
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="45"
+			android:id="@+id/editor_range_end" />
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+		<Button 
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="start"
+			android:id="@+id/btn_start" />
+		<Button 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="clear"
+			android:id="@+id/btn_clear" />
+	</LinearLayout>
+    
+	<TextView 
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:id="@+id/view_result" />
+</LinearLayout>
