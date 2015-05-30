@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="19"
         android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -42,7 +44,8 @@
         <activity android:name="com.example.test_apk2.view_pager.ViewPagerActivity"/>
         <activity android:name="com.example.test_apk2.ramdom_number.RandomNumberActivity"/>
         <activity android:name="com.example.test_apk2.ramdom_number.RandomNumberActivity2"/>
-        
+        <activity android:name="com.example.test_apk2.test_HttpClient.LoadImageViewActivity"/>
+        <activity android:name="com.example.test_apk2.test_HttpClient.UseWebViewActivity"/>
     </application>
 
 </manifest>

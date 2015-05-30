@@ -8,6 +8,8 @@ import com.example.test_apk2.floating_action_button.FloatActionButtonActivity3;
 import com.example.test_apk2.list_animation.ListAnimationActivity;
 import com.example.test_apk2.ramdom_number.RandomNumberActivity;
 import com.example.test_apk2.ramdom_number.RandomNumberActivity2;
+import com.example.test_apk2.test_HttpClient.LoadImageViewActivity;
+import com.example.test_apk2.test_HttpClient.UseWebViewActivity;
 import com.example.test_apk2.use_ime_range.ImeWithViewPagerActivity;
 import com.example.test_apk2.use_ime_range.UseImeRangeActivity;
 import com.example.test_apk2.use_ime_range.UseImeRangeWithGridActivity;
@@ -43,6 +45,8 @@ public class MainActivity extends Activity {
 		addItem(ListAnimationActivity.class, "list에서 애니메이션 처리 연습");
 		addItem(ViewPagerActivity.class, "ViewPager 연습");
 		addItem(RandomNumberActivity2.class, "random number 생성");
+		addItem(LoadImageViewActivity.class, "HttpClient, Image 불러오기");
+		addItem(UseWebViewActivity.class, "HttpClient, WebView 불러오기");
 	}
 	
 	private void addItem(Class<?> cls, String description) {
