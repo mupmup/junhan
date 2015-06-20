@@ -6,6 +6,7 @@ import com.example.test_apk2.floating_action_button.FloatActionButtonActivity;
 import com.example.test_apk2.floating_action_button.FloatActionButtonActivity2;
 import com.example.test_apk2.floating_action_button.FloatActionButtonActivity3;
 import com.example.test_apk2.list_animation.ListAnimationActivity;
+import com.example.test_apk2.overlay_view.TestOverlayView;
 import com.example.test_apk2.ramdom_number.RandomNumberActivity;
 import com.example.test_apk2.ramdom_number.RandomNumberActivity2;
 import com.example.test_apk2.test_HttpClient.LoadImageViewActivity;
@@ -14,6 +15,7 @@ import com.example.test_apk2.use_ime_range.ImeWithViewPagerActivity;
 import com.example.test_apk2.use_ime_range.UseImeRangeActivity;
 import com.example.test_apk2.use_ime_range.UseImeRangeWithGridActivity;
 import com.example.test_apk2.view_pager.ViewPagerActivity;
+import com.example.test_apk2.webview_test.TestWebViewActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -47,6 +49,8 @@ public class MainActivity extends Activity {
 		addItem(RandomNumberActivity2.class, "random number 생성");
 		addItem(LoadImageViewActivity.class, "HttpClient, Image 불러오기");
 		addItem(UseWebViewActivity.class, "HttpClient, WebView 불러오기");
+		addItem(TestWebViewActivity.class, "WebView 테스트");
+		addItem(TestOverlayView.class, "OverlayView 테스트");
 	}
 	
 	private void addItem(Class<?> cls, String description) {

@@ -9,6 +9,7 @@
         android:targetSdkVersion="21" />
     
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
@@ -46,6 +47,9 @@
         <activity android:name="com.example.test_apk2.ramdom_number.RandomNumberActivity2"/>
         <activity android:name="com.example.test_apk2.test_HttpClient.LoadImageViewActivity"/>
         <activity android:name="com.example.test_apk2.test_HttpClient.UseWebViewActivity"/>
+        <activity android:name="com.example.test_apk2.webview_test.TestWebViewActivity"/>
+        <activity android:name="com.example.test_apk2.overlay_view.TestOverlayView"/>
+        <service android:name="com.example.test_apk2.overlay_view.AOTService"/>
     </application>
 
 </manifest>
